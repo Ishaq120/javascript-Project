@@ -1,0 +1,1 @@
+console.log("I am Ishaq. I am 25 now");
