@@ -20,9 +20,9 @@ let myScoreintoString= String(myScore); // Method To Convert any data into Boole
 
 
 // =========***** Checking After Convertion *****============ 
-console.log(myScoreintoNumber + " ==== This is Number Con"); 
+/* console.log(myScoreintoNumber + " ==== This is Number Con"); 
 console.log(myScoreintoBoolean + " ==== This is Boolean Con");
-console.log(myScoreintoString + " ==== This is String Con");
+console.log(myScoreintoString + " ==== This is String Con"); */
 
 
 
@@ -59,6 +59,17 @@ console.log(myScoreintoString + " ==== This is String Con");
 
 
 
-// ==============**** After Conversation output ****================
+// ==============**** Number Converstion Confuse ****================
+console.log(1 + 2);     // =====3====
+console.log("1" + 2);   // =====12====
+console.log(1 + "2");   // =====12====
+console.log("1" + 2 + 2); // =====122====
+console.log(1 + 2 + "2");  // =====32====
 
+// JS consider first value[string/Number] as a default datatype if first value is string than the next values also treated as String and if first is Number than whole values are treated as Number and string will be added as default.
 
+            // ==============================================
+// ==============********** Never Write code like that ********====================
+            // ==============================================
+console.log(1 + 2 * 3 % 5) // Bad Practice
+console.log(((1 + 2) * 3) % 5) // Best Practice specify like that
